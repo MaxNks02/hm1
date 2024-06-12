@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Welcome to My Portfolio</h1>
+  <div class="contact-details">
+    <div class="social-icons">
+      <a id="gh-link" href="https://github.com/MaxNks02" target="_blank">
+        <img src="icons/github-logo_icon-icons.com_73546.png" alt="GitHub">
+      </a>
+      <a id="tg-link" href="https://t.me/BIade_Walker" target="_blank">
+        <img src="icons/telegram_icon-icons.com_72055.png" alt="Telegram">
+      </a>
+      <a id="email" href="mailto:maman.nks2408@gmail.com">
+        <img src="icons/gmail_new_logo_icon_159149.png" alt="Email">
+      </a>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I'm Maman Torebaev. I am a young developer and student from Innopolis.</p>
+  </section>
+  <section>
+    <h2>Projects</h2>
+    <div class="project-nav">
+      <button onclick="showProject('project1')">Project 1</button>
+      <button onclick="showProject('project2')">Project 2</button>
+      <button onclick="showProject('project3')">Project 3</button>
+    </div>
+    <div class="project-content">
+      <div id="project1" class="project">
+        <h3>Project 1: Telegram Bot</h3>
+        <p>Telegram bot to purchase items with telegram.</p>
+      </div>
+      <div id="project2" class="project" style="display:none;">
+        <h3>Project 2: Market Site</h3>
+        <p>site to help purchase items online.</p>
+      </div>
+      <div id="project3" class="project" style="display:none;">
+        <h3>Project 3: Zakyat Calculator</h3>
+        <p>Zakyat calculator to calculate zakyat.</p>
+      </div>
+    </div>
+  </section>
+</div>
+<script src="js/scripts.js"></script>
+</body>
+</html>
