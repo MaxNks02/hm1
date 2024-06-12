@@ -9,6 +9,7 @@
 <body>
 <header>
   <h1>Welcome to My Portfolio</h1>
+  <h2>Contact details:</h2>
   <div class="contact-details">
     <div class="social-icons">
       <a id="gh-link" href="https://github.com/MaxNks02" target="_blank">
@@ -30,23 +31,24 @@
   </section>
   <section>
     <h2>Projects</h2>
-    <div class="project-nav">
-      <button onclick="showProject('project1')">Project 1</button>
-      <button onclick="showProject('project2')">Project 2</button>
-      <button onclick="showProject('project3')">Project 3</button>
-    </div>
+    <ul class="project-list">
+      <li><button class="project-button" onclick="showProject('project1')">Project 1: Telegram Bot</button></li>
+      <li><button class="project-button" onclick="showProject('project2')">Project 2: Market Site</button></li>
+      <li><button class="project-button" onclick="showProject('project3')">Project 3: Zakyat Calculator</button></li>
+    </ul>
+    </ul>
     <div class="project-content">
       <div id="project1" class="project">
         <h3>Project 1: Telegram Bot</h3>
-        <p>Telegram bot to purchase items with telegram.</p>
+        <p>Telegram bot to purchase items from telegram.</p>
       </div>
       <div id="project2" class="project" style="display:none;">
         <h3>Project 2: Market Site</h3>
-        <p>site to help purchase items online.</p>
+        <p>market site to purchase items online.</p>
       </div>
       <div id="project3" class="project" style="display:none;">
         <h3>Project 3: Zakyat Calculator</h3>
-        <p>Zakyat calculator to calculate zakyat.</p>
+        <p>Zakyat calculator to calculate Zakyat.</p>
       </div>
     </div>
   </section>

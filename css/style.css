@@ -11,6 +11,36 @@ header {
   color: #fff;
   padding: 1em 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  color: #fff;
+}
+
+header h2 {
+  color: #fff;
+}
+.contact-details {
+  margin-top: 1em;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.social-icons a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
 }
 
 .container {
@@ -32,17 +62,22 @@ li {
   margin: 0.5em 0;
 }
 
-.project-nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1em;
+.project-button {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-.project-nav button {
-  margin: 0 1em;
-  padding: 0.5em 1em;
-  font-size: 1em;
-  cursor: pointer;
+.project-button:hover {
+  background-color: #0056b3;
 }
 
 .project-content {
@@ -54,19 +89,6 @@ li {
   display: none;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
-}
-
-.social-icons a {
-  margin: 0 1em;
-  text-decoration: none;
-  color: #333;
-}
-
-.social-icons img {
-  width: 40px;
-  height: 40px;
+.project:first-child {
+  display: block;
 }
