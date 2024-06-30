@@ -52,7 +52,8 @@ export function displayComic(comic: Comic): void {
   altElement.textContent = comic.alt;
 
   const publishDate = dayjs(new Date(Number(comic.year), Number(comic.month) - 1, Number(comic.day)));
-  dateElement.textContent = `Published ${publishDate.locale()}`;
+  const formattedDate = publishDate.format('MMMM DD, YYYY');
+  dateElement.textContent = `Published on ${formattedDate}`;
 }
 
 export function navigateTo(page: string): void {
