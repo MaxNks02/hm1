@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Projects from './components/Projects';
+import Comic from './components/Comic';
+import ZakyatCalculator from './components/ZakyatCalculator';
+import MarketSite from './components/Market';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+const App: React.FC = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Projects />} />
+                <Route path="/comic-identifier" element={<Comic />} />
+                <Route path="/project2" element={<ZakyatCalculator />} />
+                <Route path="/project3" element={<MarketSite />} />
+                {/* Add more routes as needed */}
+            </Routes>
+        </Router>
+    );
+};
 export default App;
