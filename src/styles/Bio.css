@@ -1,15 +1,16 @@
 .bio {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
 }
 
+
 .bio h2 {
-    margin: 0;
-    font-size: 24px;
+  margin: 2em;
+  font-size: 24px;
 }
 
 .bio p {
-    margin: 10px 0;
-    font-size: 18px;
+  margin: 10px 0;
+  font-size: 18px;
 }
