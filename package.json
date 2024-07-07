@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint --fix **/src/**/*.{ts,tsx}",
     "lint:fix": "eslint --fix **/src/**/*.{ts,tsx}",
-    "format": "prettier --write**/src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
