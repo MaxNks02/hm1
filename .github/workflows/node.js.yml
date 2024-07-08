@@ -32,6 +32,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "maxnks02@gmail.com"
+          git config --global user.name "MaxNks02"
+
       - name: Deploy to GitHub Pages
         if: success()
         run: npx gh-pages -d build
