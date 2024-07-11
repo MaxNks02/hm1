@@ -1,5 +1,5 @@
-/* Header styles */
-header {
+/* header.module.css */
+.headerContainer {
   background-color: #333;
   color: #fff;
   padding: 1em 0;
@@ -10,31 +10,31 @@ header {
   margin: 0;
 }
 
-header h1 {
+.header h1 {
   color: #fff;
 }
 
-header h2 {
+.header h2 {
   color: #fff;
 }
 
-.contact-details {
+.contactDetails {
   margin-top: 1em;
 }
 
-.social-icons {
+.socialIcons {
   display: flex;
   justify-content: center;
   margin-top: 1em;
 }
 
-.social-icons a {
+.socialIcons a {
   margin: 0 1em;
   text-decoration: none;
   color: #fff;
 }
 
-.social-icons img {
+.socialIcons img {
   width: 40px;
   height: 40px;
 }

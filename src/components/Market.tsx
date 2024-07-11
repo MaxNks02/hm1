@@ -1,13 +1,13 @@
+// components/Market.tsx
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming you are using React Router for navigation
-import '../styles/style.css';
+import Link from 'next/link';
 
 const MarketSite: React.FC = () => {
   return (
     <div>
       <header>
         <h1>Market Site</h1>
-        <Link to="/">Back to Portfolio</Link>
+        <Link href="/">Back to Portfolio</Link>
       </header>
       <div className="container">
         <section>

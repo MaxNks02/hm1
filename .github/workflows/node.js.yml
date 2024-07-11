@@ -3,10 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master
+      - main  # Adjust branch name if your default branch is different
   pull_request:
     branches:
-      - master
+      - main  # Adjust branch name if your default branch is different
 
 jobs:
   build-and-deploy:
@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14.x'
+          node-version: '14.x'  # Use the Node.js version specified in your project
 
       - name: Install dependencies
         run: npm install
@@ -32,18 +32,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Configure Git
-        run: |
-          git config --global user.email "maxnks02@gmail.com"
-          git config --global user.name "MaxNks02"
-
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           npx gh-pages -d build
 
       - name: Get GitHub Pages URL
         run: |
-          echo "GitHub Pages URL: https://${GITHUB_REPOSITORY%/*}.github.io/${GITHUB_REPOSITORY#*/}/"
+          echo "GitHub Pages URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+

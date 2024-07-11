@@ -1,13 +1,14 @@
+// components/Header.tsx
 import React from 'react';
-import '../styles/Header.css';
+import styles from '../styles/header.module.css'; // Import CSS module
 
 const Header: React.FC = () => {
   return (
-    <header>
+    <header className={styles.headerContainer}>
       <h1>Welcome to My Portfolio</h1>
       <h2>Contact details:</h2>
-      <div className="contact-details">
-        <div className="social-icons">
+      <div className={styles.contactDetails}>
+        <div className={styles.socialIcons}>
           <a
             id="gh-link"
             href="https://github.com/MaxNks02"
